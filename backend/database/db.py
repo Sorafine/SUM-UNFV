@@ -6,9 +6,9 @@ def get_db():
     if "db" not in g:
         g.db = psycopg2.connect(
             host=os.getenv("DB_HOST", "localhost"),
-            database=os.getenv("DB_NAME", "SUN_NEW"),
+            database=os.getenv("DB_NAME", "SISTEMA_UNICO"),
             user=os.getenv("DB_USER", "postgres"),
-            password=os.getenv("DB_PASS", "valentina10"),
+            password=os.getenv("DB_PASS", "123456"),
             connect_timeout=5   
         )
     return g.db
